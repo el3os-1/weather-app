@@ -9,12 +9,6 @@ A simple and modern Weather Web App that shows real-time weather information for
 
 ---
 
-## 📸 Preview
-
-![Weather App Preview](screenshot.png)
-
----
-
 ## ✨ Features
 
 - 🔍 Search any city worldwide
@@ -40,16 +34,6 @@ A simple and modern Weather Web App that shows real-time weather information for
 ## 📡 API Used
 
 - https://www.weatherapi.com/
-
----
-
-## 📂 Project Structure
-weather-app/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
 
 ---
 
