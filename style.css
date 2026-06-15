@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:400px;
+    background:rgba(255,255,255,0.15);
+   
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    color:white;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+
+h1{
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    color:#1e3c72;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+#weatherResult{
+    margin-top:25px;
+}
+
+#weatherResult img{
+    width:100px;
+    margin:10px 0;
+}
+
+#weatherResult h2{
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+#weatherResult h3{
+    font-size:55px;
+    margin:10px 0;
+}
+
+#weatherResult p{
+    margin:8px 0;
+    font-size:18px;
+}
+
+.weather-info{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    gap:10px;
+}
+
+.card{
+    flex:1;
+    background:rgba(255,255,255,0.15);
+    padding:15px;
+    border-radius:15px;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+    background: linear-gradient(
+        -45deg,
+        #1e3c72,
+        #2a5298,
+        #4facfe,
+        #00f2fe
+    );
+
+    background-size:400% 400%;
+
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+.bubbles{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.bubbles span{
+    position:absolute;
+    bottom:-100px;
+    width:40px;
+    height:40px;
+    background:rgba(255,255,255,0.15);
+    border-radius:50%;
+    animation: animate 15s linear infinite;
+}
+
+.bubbles span:nth-child(1){
+    left:10%;
+    width:60px;
+    height:60px;
+}
+
+.bubbles span:nth-child(2){
+    left:30%;
+    animation-duration:12s;
+}
+
+.bubbles span:nth-child(3){
+    left:50%;
+    width:70px;
+    height:70px;
+}
+
+.bubbles span:nth-child(4){
+    left:70%;
+    animation-duration:18s;
+}
+
+.bubbles span:nth-child(5){
+    left:85%;
+}
+
+.bubbles span:nth-child(6){
+    left:95%;
+    width:50px;
+    height:50px;
+}
+
+@keyframes animate{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
